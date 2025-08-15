@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Tran Bach Tong</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #222;
+      transition: background-color 0.5s, color 0.5s;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #555;
+    }
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #444;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .projects-list {
+      display: grid;
+      gap: 20px;
+    }
+    @media (min-width: 600px) {
+      .projects-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1000px) {
+      .projects-list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #fff;
+      transition: background-color 0.4s, color 0.4s, transform 0.3s;
+    }
+    .card a {
+      color: #0077cc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .card:hover a {
+      color: #ffcc66; /* Cam nhạt khi hover nền đen */
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    .card:hover {
+      background-color: #000;
+      color: #fff;
+      transform: scale(1.03);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Trần Bách Tòng</h1>
+    <p>Fresher Backend Developer</p>
+    <a class="button" href="CV_TranBachTong_Backend_EN.pdf" download>Download CV</a>
+    <br/>
+    <a href="https://github.com/sa160148" target="_blank">GitHub 1</a> |
+    <a href="https://github.com/tong-normal-guy" target="_blank">GitHub 2</a>
+  </header>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-list">
+      <div class="card">
+        <strong>Programming Languages</strong>
+        <p>C#, SQL</p>
+      </div>
+      <div class="card">
+        <strong>Frameworks</strong>
+        <p>ASP.NET Core</p>
+      </div>
+      <div class="card">
+        <strong>Databases</strong>
+        <p>SQL Server, PostgreSQL, MySQL, Firestore (basic)</p>
+      </div>
+      <div class="card">
+        <strong>Tools</strong>
+        <p>Git, Docker, Postman, Visual Studio, IntelliJ</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Project Experience</h2>
+    <div class="projects-list">
+      <div class="card">
+        <strong>Koi Pound Construction Order System (2025)</strong>
+        <p>ASP.NET Core Web API, PostgreSQL, Firestore</p>
+        <p>Developed a construction order management system for koi ponds.</p>
+        <a href="https://github.com/sa160148/sep490-kpcos-temp.git" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <strong>Orchid Shop (2025)</strong>
+        <p>ASP.NET Core Web API, Microsoft SQL Server</p>
+        <p>A e-commerce application for selling orchids.</p>
+        <a href="https://github.com/tong-normal-guy/orchid-shop-PRN231SU25.git" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <strong>PetRescue (2024)</strong>
+        <p>ASP.NET Core Web API, Microsoft SQL Server</p>
+        <p>A PetRescue platform.</p>
+        <a href="https://github.com/AnTT-2512/PetRescue.git" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <strong>Bird Reproduction Management System (2023)</strong>
+        <p>Java Spring Boot, MySQL</p>
+        <p>System to track bird reproduction in artificial environment.</p>
+        <a href="https://github.com/tong-normal-guy/bird-swp.git" target="_blank">View on GitHub</a>
+      </div>
+      <!-- Bạn có thể thêm nhiều card nữa ở đây -->
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>FPT University HCM Campus</strong></p>
+    <p>Bachelor of Software Engineering</p>
+    <p>Expected Graduation: 2025</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:bachtong01@gmail.com">bachtong01@gmail.com</a></p>
+    <p>Phone: 0899510892</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Tran Bach Tong. All rights reserved.
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const sections = document.querySelectorAll("section");
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const boxTop = sec.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          sec.classList.add("visible");
+        }
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
+
+</body>
+</html>
